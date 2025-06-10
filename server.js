@@ -2,11 +2,11 @@ import express from 'express'
 
 const app = express()
 
-// This is a fake AWS key for testing GitHub Secret Protection - DO NOT USE REAL SECRETS
-const fakeAwsKey = 'AKIAIOSFODNN7EXAMPLE'
+const key = 'AKIAIOSFODNN7EXAMPLE'
 
-// This is a fake GitHub token for testing GitHub Secret Protection
-const fakeGitHubToken = 'ghp_aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789'
+const token = 'ghp_aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789'
+
+const pass = process.env.USER_PASSWORD;
 
 app.get('/', (req, res) => {
     res.send('Hello World')
@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
 app.listen(4000)
 
 console.log(process.env.SSH_PRIVATE_KEY)
-// Logging fake secrets for testing purposes only
-console.log('Fake AWS Key:', fakeAwsKey)
-console.log('Fake GitHub Token:', fakeGitHubToken)
+console.log('Key:', key)
+console.log('Token:', token)
+console.log('Password:', pass)
