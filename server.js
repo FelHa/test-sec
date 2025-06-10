@@ -7,3 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(4000)
+
+console.log(process.env.SSH_PRIVATE_KEY)
