@@ -1,0 +1,22 @@
+{
+  "name": "test-sec",
+  "version": "1.0.0",
+  "description": "test github features",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelHa/test-sec.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelHa/test-sec/issues"
+  },
+  "homepage": "https://github.com/FelHa/test-sec#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
